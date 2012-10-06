@@ -5,7 +5,7 @@
  */
 package com.wwm.db.server.wwstrategies.manual;
 
-import org.fuzzydb.attrs.bool.BooleanSplitConfiguration;
+import org.fuzzydb.attrs.bool.BooleanPriority;
 import org.fuzzydb.attrs.bool.BooleanValue;
 import org.fuzzydb.core.whirlwind.internal.IAttribute;
 
@@ -32,7 +32,7 @@ public class BooleanSplitter extends AbstractAttributeSplitter {
 
 
 
-    public BooleanSplitter(BooleanSplitConfiguration splitConf) {
+    public BooleanSplitter(BooleanPriority splitConf) {
     	super( splitConf.getId() );
         this.priority = splitConf.getPriority();
         reset();

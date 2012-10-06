@@ -4,7 +4,7 @@
  */
 package com.wwm.db.server.wwstrategies.manual;
 
-import org.fuzzydb.attrs.simple.FloatSplitConfiguration;
+import org.fuzzydb.attrs.simple.FloatPriority;
 import org.fuzzydb.attrs.simple.FloatValue;
 import org.fuzzydb.core.LogFactory;
 import org.fuzzydb.core.whirlwind.internal.IAttribute;
@@ -35,7 +35,7 @@ public class FloatSplitter extends AbstractAttributeSplitter {
 	private final float priority;
 
 
-    public FloatSplitter(FloatSplitConfiguration configuration) {
+    public FloatSplitter(FloatPriority configuration) {
     	super( configuration.getId() );
 		expectedRange = configuration.getExpected();
 		priority = configuration.getPriority();

@@ -5,7 +5,7 @@
  */
 package com.wwm.db.server.wwstrategies.manual;
 
-import org.fuzzydb.attrs.dimensions.DimensionSplitConfiguration;
+import org.fuzzydb.attrs.dimensions.DimensionPriority;
 import org.fuzzydb.core.LogFactory;
 import org.fuzzydb.core.whirlwind.internal.IAttribute;
 import org.fuzzydb.dto.dimensions.IDimensions;
@@ -35,7 +35,7 @@ public class DimensionSplitter extends AbstractAttributeSplitter {
     int collectionSize = 0; // TODO: Isn't this in the base class as _collectionSize ??
 
 
-    public DimensionSplitter(DimensionSplitConfiguration configuration) {
+    public DimensionSplitter(DimensionPriority configuration) {
     	super( configuration.getId() );
 		expectedRanges = configuration.getExpected();
 		splitPriorities = configuration.getPriority();

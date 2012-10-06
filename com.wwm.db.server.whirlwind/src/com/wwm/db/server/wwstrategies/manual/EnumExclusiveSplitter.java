@@ -23,7 +23,7 @@ public class EnumExclusiveSplitter extends AbstractAttributeSplitter {
 	private final float priority;
 
 
-	public EnumExclusiveSplitter(org.fuzzydb.attrs.enums.EnumExclusiveSplitConfiguration configuration) {
+	public EnumExclusiveSplitter(org.fuzzydb.attrs.enums.SingleEnumPriority configuration) {
 		super( configuration.getId() );
 		numEnumValues = configuration.getSize();
 		priority = configuration.getPriority();

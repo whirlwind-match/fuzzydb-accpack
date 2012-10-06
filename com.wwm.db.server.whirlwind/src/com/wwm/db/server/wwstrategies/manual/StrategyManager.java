@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.TreeMap;
 
 import org.fuzzydb.attrs.ManualIndexStrategy;
-import org.fuzzydb.attrs.SplitConfiguration;
+import org.fuzzydb.attrs.AttributePriority;
 import org.fuzzydb.client.marker.IWhirlwindItem;
 import org.fuzzydb.client.whirlwind.IndexStrategy;
 import org.fuzzydb.core.LogFactory;
@@ -120,7 +120,7 @@ public class StrategyManager implements Serializable {
     private void initSplitters() {
         splitters = new TreeMap<Integer, AbstractAttributeSplitter>();
 
-        for (SplitConfiguration splitConf : ((ManualIndexStrategy) strategy).getSplitConfigurations() ) {
+        for (AttributePriority splitConf : ((ManualIndexStrategy) strategy).getPriorities() ) {
             AbstractAttributeSplitter splitter = SplitterFactory.getInstance().createSplitter( splitConf );
             splitters.put( splitter.getSplitId(), splitter );
         }
