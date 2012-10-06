@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/com.wwm.db.server/src/main/java/com/wwm/db/RunServer.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.wwm.db.RunServer"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.wwm.db.server"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea -Dcom.sun.management.jmxremote.port=27602 -Dcom.sun.management.jmxremote.authenticate=false -Djava.util.logging.config.file=${workspace_loc:com.wwm.db.server}/logging.properties -Xmx50M -XX:+UseConcMarkSweepGC -XX:-PrintGCDetails -XX:-PrintTenuringDistribution"/>
+</launchConfiguration>
