@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.fuzzydb</groupId>
 		<artifactId>fuzzydb-parent</artifactId>
-		<version>1.0.0.RC1-SNAPSHOT</version>
+		<version>1.0.0.RELEASE</version>
 	</parent>
 
 	<build>
@@ -42,4 +42,5 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<version>1.0.0.RC1-SNAPSHOT</version>
 </project>
